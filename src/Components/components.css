@@ -1,0 +1,113 @@
+.samsung-container,
+.realme-container,
+.oppo-container,
+.iphone-container {
+  display: flex;
+  margin-bottom: 1.5rem;
+  width: 700px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products-container {
+  display: flex;
+  margin-bottom: 1.5rem;
+  width: 700px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.samsung-container-hide,
+.realme-container-hide,
+.oppo-container-hide,
+.iphone-container-hide {
+  display: none;
+}
+
+.products-image {
+  mix-blend-mode: multiply;
+  width: 70px;
+  height: 90px;
+}
+
+.products-wrapper {
+  display: flex;
+  width: auto;
+}
+
+.products-information {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-arrow-up {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.button-arrow-up:hover,
+.button-arrow-down:hover {
+  color: rgb(34, 34, 126);
+}
+
+.button-arrow-down {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.products-information {
+  margin-left: 3rem;
+  width: 150px;
+  display: flex;
+  text-align: start;
+  height: 80px;
+}
+
+.products-name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+
+.products-price {
+  margin-top: 0.3rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+
+.products-information button {
+  background: transparent;
+  border: none;
+  margin-top: 1rem;
+  text-align: start;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: lowercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.products-information button:hover{
+  color: rgb(21, 81, 150);
+}
+
+@media (max-width: 748px) {
+  .samsung-container,
+  .realme-container,
+  .oppo-container,
+  .iphone-container {
+    width: 90%;
+  }
+
+  .products-container{
+    width: 90%;
+  }
+  .products-information{
+    margin-left: 1.8rem;
+  }
+}

@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(160, 186, 221);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(44, 101, 175);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 750px;
+}
+
+.main-header div h3 {
+  color: white;
+  font-size: 2.3rem;
+  letter-spacing: 3px;
+  font-family: "Open Sans", sans-serif;
+  /* margin-right: 2rem; */
+}
+
+.main-header div .bag-icon-container {
+  /* margin-left: 2rem; */
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.bag-icon-amount {
+  top: 0.5rem;
+  right: 1.6rem;
+  font-size: 23px;
+  position: absolute;
+  color: white;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  height: 25px;
+  text-align: center;
+  background-color: rgb(160, 186, 221);
+  border-radius: 50%;
+}
+
+.main-header div .bag-icon {
+  font-size: 2.3rem;
+  color: white;
+}
+
+.main-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.main-body h2 {
+  font-size: 2.4rem;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 3rem;
+}
+
+.main-body > p {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.products-main {
+  margin-top: 2.4rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.total-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.total-container {
+  margin-top: 2rem;
+  display: flex;
+  width: 750px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.total-underline {
+  border-top: 2px solid rgb(61, 59, 59);
+  width: 100%;
+}
+
+.total-wrapper {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.total-wrapper p {
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+}
+.total-wrapper p:nth-child(1) {
+  letter-spacing: 1px;
+}
+
+.total-container button {
+  margin-top: 2rem;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  padding: 8px 20px;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  border: 1px solid rgb(13, 13, 133);
+  outline: none;
+  color: rgb(13, 13, 133);
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+.total-container button:hover {
+  color: white;
+  background-color: rgb(13, 13, 133);
+  border: none;
+}
+
+@media (max-width: 748px) {
+  .main-header div {
+    width: 90%;
+  }
+
+  .total-container {
+    width: 90%;
+  }
+}
